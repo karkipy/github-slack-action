@@ -1,0 +1,14 @@
+{
+  "name": "temp-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1",
+    "@slack/bolt": "^2.0.1"
+  }
+}
