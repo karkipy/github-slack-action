@@ -1,4 +1,4 @@
-# Hello world javascript action
+# javascript action
 
 This action sends message or file to slack channel
 
