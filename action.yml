@@ -1,13 +1,22 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Slack Message'
+description: 'send message or upload file in slack '
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  SLACK_MESSAGE:  # id of input
+    description: 'message to send'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: 'hello'
+  SLACK_CHANNEL:
+    description: 'slack channel'
+    required: true
+  SLACK_TOKEN:
+    description: 'slack app token'
+    required: true
+  SLACK_SIGNING_SECRET:
+    description: 'slack app signing secret '
+    required: true
+  FILE_PATH:
+    description: 'path of file to upload'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'

@@ -1,21 +1,11 @@
 # Hello world javascript action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action sends message or file to slack channel
 
 ## Inputs
 
-### `who-to-greet`
-
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-### `time`
-
-The time we greeted you.
-
-## Example usage
-
-uses: actions/hello-world-javascript-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+SLACK_MESSAGE: message to send
+SLACK_CHANNEL: to which slack channel
+SLACK_TOKEN: token generated from slack app
+SLACK_SIGNING_SECRET: signing secret generated from slack app
+FILE_PATH: file path to upload
